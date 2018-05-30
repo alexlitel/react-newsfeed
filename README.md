@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/alexlitel/react-newsfeed.svg?branch=master)](https://travis-ci.org/alexlitel/react-newsfeed)
 
-This is a simple sample newsfeed-based React site, and a frontend test/demonstration project I made with some identifying details removed. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). A number of packages have been added to the Create React App configuration to enable routing, Sass-esque code in CSS, and Enzyme testing, among other things. The store may not persist between page changes.
+This is a simple sample newsfeed-based React site, and a frontend test/demonstration project I made with some identifying details removed. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). A number of packages have been added to the Create React App configuration to enable routing, Sass-esque code in CSS, and Enzyme testing, among other things that required the app ejected and default Webpack configurations customized. The store may not persist between page changes. The live site can be viewed at [https://alexlitel.github.io/react-newsfeed/](https://alexlitel.github.io/react-newsfeed/).
 
 
 Commands to get started. First four commands taken from Create React App README.

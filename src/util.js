@@ -1,5 +1,8 @@
 import 'isomorphic-fetch'
 
+
+export const baseUrl = process.env.PUBLIC_URL
+
 export const apiPath = 'https://demo1231077.mockable.io/api'
 
 /**

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import sanitizeHtml from 'sanitize-html'
-import { formatDate } from '../util'
+import { formatDate, baseUrl } from '../util'
 
 /* eslint-disable react/jsx-indent react/no-danger */
 const FeedItem = ({ item }) => (
@@ -18,11 +18,11 @@ const FeedItem = ({ item }) => (
       </a>
     </h2>
     {item.media.length > 0 && (
-    	<a href={`/articles/${item.id}`}>
+    	<a href={`${baseUrl}/articles/${item.id}`}>
       		<img className="app-feed-item-img" src={item.media[0].url} alt="Article description" />
     </a>)
     }
-    <p className="app-feed-item-summary">{item.summary} {!item.body && (<a href={`/articles/${item.id}`}>Read More</a>)}</p>
+    <p className="app-feed-item-summary">{item.summary} {!item.body && (<a href={`${baseUrl}/articles/${item.id}`}>Read More</a>)}</p>
     {item.body && (<div className="app-feed-item-body" dangerouslySetInnerHTML={{ __html: sanitizeHtml(item.body) }} />)}
 
     {item.topics.length > 0 && (
