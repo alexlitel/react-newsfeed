@@ -13,7 +13,7 @@ const FeedItem = ({ item }) => (
       {item.attribution.displayName}
     </h3>
     <h2 className="app-feed-item-title">
-      <a href={`/articles/${item.id}`} className="app-feed-item-link">
+      <a href={`${baseUrl}/articles/${item.id}`} className="app-feed-item-link">
         {item.title}
       </a>
     </h2>
